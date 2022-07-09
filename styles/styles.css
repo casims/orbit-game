@@ -1,0 +1,353 @@
+/* TYPOGRAPHY / COLOURS */
+@font-face {
+    font-family: 'SourceSans';
+    src: url(../fonts/sourcesanspro-light.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color: rgb(18, 18, 18);
+    font-family: 'SourceSans', Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+
+h1 {
+    background-color: rgb(36, 36, 36);
+    font-size: 2rem;
+    border-radius: 50px;
+    box-shadow: 0px 0px 0px 9px white;
+}
+
+#scoreCounter {
+    background-color: rgb(36, 36, 36);
+    font-size: 2rem;
+    border-radius: 50px;
+    box-shadow: 0px 0px 0px 9px white;
+}
+
+h2 {
+    position: relative;
+    top: 100px;
+    font-size: 4rem;
+    margin: 0 auto;
+}
+
+h3 {
+    position: relative;
+    top: 150px;
+    font-size: 1.75rem;
+    margin: 0 auto;
+}
+
+.screen {
+    background-color: rgb(36, 36, 36);
+}
+
+/* DIMENSIONS / POSITIONS */
+#master-container {
+    width: 600px;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+#container-header {
+    margin: 0 auto 2rem;
+    width: 200px;
+    height: 50px;
+}
+
+#container-body,
+.screen {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    border-radius: 50%;
+}
+
+.screen {
+    box-shadow: 0px 0px 0px 7px white, 0px 0px 0px 12px rgb(255, 255, 255), 0px 0px 0px 19px white;
+}
+
+button {
+    font-family: 'SourceSans', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    background-color: white;
+    border: 2px solid rgb(187, 187, 187);
+    border-radius: 50px;
+    padding: 0 1rem;
+    transition: all 0.2s ease;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: rgb(187, 187, 187);
+    border: 2px solid white;
+}
+
+#startBtnStart {
+    display: block;
+    position: relative;
+    top: 100px;
+    font-size: 3rem;
+    padding: 0 3rem;
+}
+
+#startBtnScores,
+#startBtnControls {
+    display: block;
+    position: relative;
+}
+
+#startBtnScores {
+    top: 380px;
+}
+
+#startBtnControls {
+    top: 390px;
+}
+
+#selectBtnEasy,
+#selectBtnNormal,
+#selectBtnHard {
+    position: relative;
+    top: 160px;
+}
+
+#selectBtnEasy:hover {
+    background-color: rgb(0, 180, 0);
+    border: 2px solid rgb(0, 240, 0);
+    color: white;
+}
+
+#selectBtnNormal:hover {
+    background-color: rgb(255, 217, 0);
+    border: 2px solid rgb(255, 255, 0);
+    color: white;
+}
+
+#selectBtnHard:hover {
+    background-color: rgb(180, 0, 0);
+    border: 2px solid rgb(240, 0, 0);
+    color: white;
+}
+
+#endBtnRetry,
+#endBtnScores,
+#endBtnReset {
+    display: block;
+    position: relative;
+    top: 100px;
+    margin-bottom: 1rem;
+}
+
+.btnBack {
+    display: block;
+    position: relative;
+    top: 450px;
+}
+
+input {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: 170px;
+    width: 200px;
+    height: 30px;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(122, 122, 122);
+    color: white;
+    padding: .4rem 1rem;
+}
+
+#getnameBtnConfirm {
+    position: relative;
+    top: 180px;
+}
+
+#scrnGetName .btnBack {
+    top: 407px;
+}
+
+#scrnControls .btnBack {
+    top: 531px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#scrnEnd .btnBack {
+    top: 100px;
+}
+
+ol {
+    position: relative;
+    margin: 0 auto;
+    width: 400px;
+    top: 80px;
+}
+
+li {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+#scrnControls div {
+    position: absolute;
+    display: inline;
+}
+
+#scrnControls img {
+    width: 100px;
+}
+
+#scrnControls p {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+#instructCounterClockwise {
+    left: 70px;
+    top: 250px;
+}
+
+#instructClockwise {
+    right: 105px;
+    top: 250px;
+}
+
+#instructCounterClockwise p::first-letter,
+#instructClockwise p::first-letter {
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(18, 18, 18);
+    box-shadow: 2px 2px 0px 2px rgb(122, 122, 122);
+    background-color: white;
+    padding: 0.2rem 1rem;
+    border-radius: 10px;
+}
+
+#playerObjectFake {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    margin: auto;
+    top: 245px;
+    right: 245px;
+    bottom: 245px;
+    left: 245px;
+    transition: all .02s ease;
+}
+
+#fakeLine {
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    border: 6px solid white;
+    border-top-color: transparent;
+    background-color: transparent;
+    border-radius: 50%;
+    margin: auto;
+}
+
+#playerObjectCoreFake {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    background-color: white;
+}
+
+#playerObjectBallFake {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    top: 0;
+    left: 42.5px;
+    right: 42.5px;
+    background-color: white;
+}
+
+#gameCanvas {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+}
+
+#gameCounter,
+#gameScore {
+    margin: 2.7rem auto 0;
+    position: relative;
+    width: 200px;
+    height: 50px;
+}
+
+#playerObject {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    margin: auto;
+    top: 245px;
+    right: 245px;
+    bottom: 245px;
+    left: 245px;
+    transition: all .02s ease;
+}
+
+#playerObjectCore {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    background-color: white;
+}
+
+#playerObjectBall {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    top: 0;
+    left: 42.5px;
+    right: 42.5px;
+    background-color: white;
+}
+
+.line {
+    position: absolute;
+    border: 20px solid white;
+    border-top-color: transparent;
+    background-color: transparent;
+    width: 560px;
+    height: 560px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.easy {
+    transition: all .4s ease;
+}
+
+.normal {
+    transition: all .1s ease;
+}
+
+.hard {
+    transition: all .04s ease;
+}

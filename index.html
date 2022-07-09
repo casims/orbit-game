@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Orbit</title>
+</head>
+
+<body>
+    <div id="master-container">
+        <div id="container-header">
+            <h1>Orbit</h1>
+        </div>
+
+        <div id="container-body">
+
+            <div class="screen" id="scrnStart">
+                <div id="playerObjectFake">
+                    <div id="playerObjectBallFake"></div>
+                    <div id="playerObjectCoreFake"></div>
+                    <div id="fakeLine"></div>
+                </div>
+                <button id="startBtnStart">Play</button>
+                <button id="startBtnScores">Highscores</button>
+                <button id="startBtnControls">Controls</button>
+            </div>
+
+            <div class="screen" id="scrnScores">
+                <h2>Highscores</h2>
+                <button class="btnBack">Back</button>
+                <ol id="scoreboard">
+
+                </ol>
+            </div>
+
+            <div class="screen" id="scrnControls">
+                <button class="btnBack">Back</button>
+                <h2>Controls</h2>
+                <div id="instructCounterClockwise">
+                    <img src="images/move-counterclockwise.png" alt="Counter-Clockwise Movement">
+                    <p>A<br> move<br> Counter-Clockwise</p>
+                </div>
+                <div id="instructClockwise">
+                    <img src="images/move-clockwise.png" alt="Clockwise Movement">
+                    <p>D<br> move<br> Clockwise</p>
+                </div>
+            </div>
+
+            <div class="screen" id="scrnDiffSelect">
+                <h3>Choose a Difficulty</h3>
+                <button id="selectBtnEasy">Easy</button>
+                <button id="selectBtnNormal">Normal</button>
+                <button id="selectBtnHard">Hard</button>
+                <button class="btnBack">Back</button>
+            </div>
+
+            <div class="screen" id="scrnGetName">
+                <h3>Input Your Name</h3>
+                <input type="text" id="inputName" name="inputName">
+                <button id="getnameBtnConfirm">Confirm</button>
+                <button class="btnBack">Back</button>
+            </div>
+
+            <div class="screen" id="scrnGame">
+                <div id="gameCanvas">
+                    <div id="playerObject">
+                        <div id="playerObjectBall"></div>
+                        <div id="playerObjectCore"></div>
+                    </div>
+                </div>
+                <div id="gameScore">
+                    <p id="scoreCounter">0</p>
+                </div>
+            </div>
+
+            <div class="screen" id="scrnEnd">
+                <h2>Game Over</h2>
+                <p id="endTimer"></p>
+                <p id="endScore"></p>
+                <button id="endBtnRetry">Try Again</button>
+                <button id="endBtnScores">Highscores</button>
+                <button id="endBtnReset">Main Menu</button>
+            </div>
+
+        </div>
+    </div> 
+    <script src="scripts/game.js"></script>    
+</body>
+
+</html>
